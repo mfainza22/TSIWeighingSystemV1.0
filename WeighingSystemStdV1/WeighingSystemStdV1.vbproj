@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{276E31FC-BAA5-472D-A618-80A6123BA587}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WeighingSystemV1_1.My.MyApplication</StartupObject>
+    <RootNamespace>WeighingSystemV1_1</RootNamespace>
+    <AssemblyName>Weighing System v1.1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Weighing System v1.1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Weighing System v1.1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>terriniel Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Weighing System v1.1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Weighing System v1.1.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="MykeCtrlEx">
+      <HintPath>bin\Release\MykeCtrlEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CLS_CLEARMEM.vb" />
+    <Compile Include="CLS_DOSPRINTER.vb" />
+    <Compile Include="CLS_LOG.vb" />
+    <Compile Include="CLS_CONTROLTOGGLES.vb" />
+    <Compile Include="CLS_CRYPTO.vb" />
+    <Compile Include="CLS_DATAGRID.vb" />
+    <Compile Include="CLS_DB.vb" />
+    <Compile Include="CLS_DBVIEWER.vb" />
+    <Compile Include="CLS_SERVERPROC.vb" />
+    <Compile Include="ds.vb">
+      <DependentUpon>ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewComm.Designer.vb">
+      <DependentUpon>FrmNewComm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewComm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBackup.Designer.vb">
+      <DependentUpon>FrmBackup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBackup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditTrans.Designer.vb">
+      <DependentUpon>FrmEditTrans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditTrans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManagement.Designer.vb">
+      <DependentUpon>FrmManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConnProgress.designer.vb">
+      <DependentUpon>FrmConnProgress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConnProgress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCust.Designer.vb">
+      <DependentUpon>FrmCust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDrivers.Designer.vb">
+      <DependentUpon>FrmDrivers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDrivers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHauler.Designer.vb">
+      <DependentUpon>FrmHauler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHauler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogs.Designer.vb">
+      <DependentUpon>FrmLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCommodity.designer.vb">
+      <DependentUpon>FrmCommodity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCommodity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewCust.Designer.vb">
+      <DependentUpon>FrmNewCust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewCust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReports.Designer.vb">
+      <DependentUpon>FrmReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSup.Designer.vb">
+      <DependentUpon>FrmSup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSystemSettings.Designer.vb">
+      <DependentUpon>FrmSystemSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSystemSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrans.Designer.vb">
+      <DependentUpon>FrmTrans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransOK.Designer.vb">
+      <DependentUpon>FrmTransOK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransOK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrucks.Designer.vb">
+      <DependentUpon>FrmTrucks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrucks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsersAccounts.designer.vb">
+      <DependentUpon>FrmUsersAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsersAccounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIMain.designer.vb">
+      <DependentUpon>MDIMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MOD_MAINFORMPROC.vb" />
+    <Compile Include="MOD_REPORTING.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ds.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmNewComm.resx">
+      <DependentUpon>FrmNewComm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditTrans.resx">
+      <DependentUpon>FrmEditTrans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManagement.resx">
+      <DependentUpon>FrmManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConnProgress.resx">
+      <DependentUpon>FrmConnProgress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCust.resx">
+      <DependentUpon>FrmCust.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDrivers.resx">
+      <DependentUpon>FrmDrivers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHauler.resx">
+      <DependentUpon>FrmHauler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogs.resx">
+      <DependentUpon>FrmLogs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCommodity.resx">
+      <DependentUpon>FrmCommodity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewCust.resx">
+      <DependentUpon>FrmNewCust.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReports.resx">
+      <DependentUpon>FrmReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSup.resx">
+      <DependentUpon>FrmSup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSystemSettings.resx">
+      <DependentUpon>FrmSystemSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTrans.resx">
+      <DependentUpon>FrmTrans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransOK.resx">
+      <DependentUpon>FrmTransOK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTrucks.resx">
+      <DependentUpon>FrmTrucks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsersAccounts.resx">
+      <DependentUpon>FrmUsersAccounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIMain.resx">
+      <DependentUpon>MDIMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Fonts\DS-DIGI.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Fonts\DS-DIGIB.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Fonts\DS-DIGII.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Fonts\DS-DIGIT.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Weighing System V1.0.iss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Fonts\saxmono.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ds.xsc">
+      <DependentUpon>ds.xsd</DependentUpon>
+    </None>
+    <None Include="ds.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ds.xss">
+      <DependentUpon>ds.xsd</DependentUpon>
+    </None>
+    <None Include="PRINT_ERROR_FIX\Weighing System v1.1.exe.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\GenRepNP.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\GenRepWP.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\TcktIn Wid Weigher In.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\TcktIn.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\TcktInOutAll - Copy.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\TcktInOutAll - Wid Weigher In.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\TcktInOutAll.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\TcktIn_orig.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\TcktOut.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\TcktOut_orig.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="reports\tmp.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Information-icon 48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Last_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Last_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Last_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Last_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1392640599_519791-101_Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transheader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msgbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msgbox1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhiteHeader1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhiteHeader3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PRINT_ERROR_FIX\readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="terriniel Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DAL\Controllers\" />
+    <Folder Include="DAL\Helpers\" />
+    <Folder Include="DAL\Models\" />
+    <Folder Include="DAL\ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\utils\WeightDev\WeightDev\WeightDev.csproj">
+      <Project>{d6ae4ea4-aaef-47cf-a0ca-9db107f4afdc}</Project>
+      <Name>WeightDev</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
